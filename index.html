@@ -7,34 +7,58 @@
     </head>
     <body>
 
-        <div class="headingTitle">
-            <h1>My favourite songs ATM</h1>
+<header class="barra-inicio">
+        <div class="contenedor">
+            <div class="columna">
+                <div class="nombre-empresa">
+                    <h1>Cristian Jocol</h1>
+                </div>
+            </div>
         </div>
+</header>
+
+        <!--sección para titulo incial-->
+        <section class="titulo-inicial">
+            <div class="contenedor">
+                <div class="row alinear-elementos-centro">
+                    <div class="headingTitle">
+                        <h1>My favourite</h1>
+                        <h1>songs ATM</h1>
+                    </div>
+                </div>  
+            </div>  
+        </section>
 
         <!--Este conjunto de DIV´s contiene las canciones que podran ser reproducidas al presionarlas-->
-        <div class="llavePrincipal">
-            <div class="llave" data-key="49">
-                <kbd>1</kbd>
-                <span class="sound">DLD-Mi Vida</span>
-            </div>
-            <div class="llave" data-key="50">
-                <kbd>2</kbd>
-                <span class="sound">Sublime-Santeria</span>
-            </div>
-            <div class="llave" data-key="51">
-                <kbd>3</kbd>
-                <span class="sound">MGMT-Kids</span>
-            </div>
-            <div class="llave" data-key="52">
-                <kbd>4</kbd>
-                <span class="sound">Los Bunkers-Si estas pensando mal de mi</span>
-            </div>
-            <div class="llave" data-key="53">
-                <kbd>5</kbd>
-                <span class="sound">The Killers-Mr.Brightside</span>
-            </div>
-        </div>  
-
+        <section class="botones-sonidos">
+            <div class="contenedor">
+                <div class="row alinear-elementos-centro">
+                    <div class="llavePrincipal">
+                        <div class="llave" data-key="49">
+                            <kbd>1</kbd>
+                            <span class="sound">DLD Mi Vida</span>
+                        </div>
+                        <div class="llave" data-key="50">
+                            <kbd>2</kbd>
+                            <span class="sound">Sublime Santeria</span>
+                        </div>
+                        <div class="llave" data-key="51">
+                            <kbd>3</kbd>
+                            <span class="sound">MGMT Kids</span>
+                        </div>
+                        <div class="llave" data-key="52">
+                            <kbd>4</kbd>
+                            <span class="sound">Los Bunkers-Si estas pensando mal de mi</span>
+                        </div>
+                        <div class="llave" data-key="53">
+                            <kbd>5</kbd>
+                            <span class="sound">The Killers Mr.Brightside</span>
+                        </div>
+                    </div>
+                </div>    
+            </div>      
+        </section>
+        
             <!--Audios los cuales se asignan a una tecla especifica-->
             <audio data-key="49" src="audio/mi-vida.mp3"></audio>
             <audio data-key="50" src="audio/sublime-santeria.mp3"></audio>
