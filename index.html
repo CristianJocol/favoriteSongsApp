@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Music List App</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="headingTitle">
+            <h1>My favourite songs ATM</h1>
+        </div>
+
+        <!--Este conjunto de DIV´s contiene las canciones que podran ser reproducidas al presionarlas-->
+        <div class="llavePrincipal">
+            <div class="llave" data-key="49">
+                <kbd>1</kbd>
+                <span class="sound">DLD-Mi Vida</span>
+            </div>
+            <div class="llave" data-key="50">
+                <kbd>2</kbd>
+                <span class="sound">Sublime-Santeria</span>
+            </div>
+            <div class="llave" data-key="51">
+                <kbd>3</kbd>
+                <span class="sound">MGMT-Kids</span>
+            </div>
+            <div class="llave" data-key="52">
+                <kbd>4</kbd>
+                <span class="sound">Los Bunkers-Si estas pensando mal de mi</span>
+            </div>
+            <div class="llave" data-key="53">
+                <kbd>5</kbd>
+                <span class="sound">The Killers-Mr.Brightside</span>
+            </div>
+        </div>  
+
+            <!--Audios los cuales se asignan a una tecla especifica-->
+            <audio data-key="49" src="audio/mi-vida.mp3"></audio>
+            <audio data-key="50" src="audio/sublime-santeria.mp3"></audio>
+            <audio data-key="51" src="audio/mgmt-kids.mp3"></audio>
+            <audio data-key="52" src="audio/si-estas-pensando-mal-de-mi-los-bunkers.mp3"></audio>
+            <audio data-key="53" src="audio/mr-brightside.mp3"></audio>
+
+            <!--En el siguiente scropt se hacen sonar las canciones-->
+            <script>
+
+            </script>
+    </body>
+</html>
