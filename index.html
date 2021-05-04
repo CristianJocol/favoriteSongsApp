@@ -68,7 +68,24 @@
 
             <!--En el siguiente scropt se hacen sonar las canciones-->
             <script>
+                function removeTransition(e){
+                    if(e.propertyName !== 'transform') {return;}
+                    e.target.classList.remove('playing'); 
+                }
 
+                function reproducirSonido(e){
+                    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+                    const llaveAudio = document.querySelector(`div[data-key="${e.keyCode}"]`);
+                    if(!audio){return;} //En caso no exista data-key
+
+                    llaveAudio.classList.add('playing');
+                    audio.currentTime = 0;
+                    audio.play();
+                }
+
+                const keys = Array.from(document.querySelectorAll('.llave'));
+                keys.forEach(llave => llave.addEventListener('transitionend', removeTransition));
+                window.addEventListener('keydown', reproducirSonido);
             </script>
     </body>
 </html>
